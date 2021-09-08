@@ -1,29 +1,23 @@
-/* body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-.navbar{
-    background-color:rgb(212, 218, 219);
-    height: 70px;
-    border-radius: 0px;
-}
-.heading{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-} */
-
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
-* {
-    padding: 0;
-    margin: 0;
+*{
+padding: 0;
+margin: 0;
     box-sizing: border-box;
 }
 
-html {
+.navbar{
+    background-color: whitesmoke;
+    height: 100px;
+}
+
+
+html{
     font-size: 10px;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
 }
 
-a {
+a{
     text-decoration: none;
 }
 
@@ -41,7 +35,7 @@ img {
     object-fit: cover;
 }
 
-p {
+p{
     color: black;
     font-size: 1.4rem;
     margin-top: 5px;
@@ -50,7 +44,7 @@ p {
     letter-spacing: .05rem;
 }
 
-.section-title {
+.section-title{
     font-size: 4rem;
     font-weight: 300;
     color: black;
@@ -94,7 +88,7 @@ p {
 }
 
 
-/* Header section */
+/*  section */
 
 #header {
     position: fixed;
