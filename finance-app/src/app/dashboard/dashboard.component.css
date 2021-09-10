@@ -4,10 +4,22 @@ padding: 0;
 margin: 0;
     box-sizing: border-box;
 }
-
+.body{
+    background-image: url('/assets/images/stock.jpg');
+    border-radius: 10px;
+}
 .navbar{
     background-color: whitesmoke;
-    height: 100px;
+    height: 80px;
+    /* justify-content: center; */
+}
+.heading{
+    color: whitesmoke;
+    padding-left: 100px;
+}
+.homelink{
+    color: whitesmoke;
+    padding-right: 100px;
 }
 
 
@@ -72,15 +84,27 @@ p{
     transition-property: background-color, color;
 }
 
+canvas{
+
+    /* width:1000px !important; */
+    height:800px !important;
+  
+  }
+
 .cta:hover {
     color: black;
     background-color: #FFC627;
 }
-
+.brand h5{
+    text-align: center;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
 .brand h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: rgb(71, 70, 70);
+    /* color: rgb(71, 70, 70); */
+    color: whitesmoke;
 }
 
 .brand h1 span {

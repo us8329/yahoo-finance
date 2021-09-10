@@ -4,31 +4,68 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 
+<body>
 <nav class="navbar fixed-top navbar-light bg-light" position='fixed' style="margin-bottom: 10px">
-  <div class=heading>
-    <h5>FINANCE</h5>
+  <div class="brand">
+    <!-- <a href="#home"> -->
+      <h2><span>F I N </span>A N C E</h2>
+    <!-- </a> -->
   </div>
+  <label (click)="toSearch()">Search Stock</label>
 </nav>
 <body>
 
+<body class="body">
+  <section id="welcomescreen">
+    <div class="header container">
+      <div class="nav-bar">
+          <div class="brand">
+              <!-- <a href="#home"> -->
+                  <h1>WELCOME TO YAHOO FINANCE APP </h1>
+                  <h5>Check which stock to buy</h5>
+              <!-- </a> -->
+          </div>
+      </div>
+  </div>
+  </section>
+</body>
 
-<div class="header container">
-    <div class="nav-bar">
-        <div class="brand">
-            <a href="#home">
-                <h1><span>FIN</span>ANCE</h1>
-            </a>
-        </div>
+<!-- <body>  -->
+  <section id="searchStock">
+    <div class='card'>
+      <div class="card-body"><br />
+      
+        <input (change)="onChange($event)" (keyup)="onKeyup($event)" class="form-control" type="text" placeholder="Search..." list="searchresults" autofocus/>
+        <datalist id="searchresults">
+          <option value="value">name</option>
+        </datalist>
+    
+
+    
+        <div class="form-group row" id="timeframe">
+          <label class="col-sm-6 col-form-label" for="timeframe">Timeframe:</label>
+          </div>
+
+          <!-- <div class="col-sm-6">
+            <select (change)="onTimeChange($event.target.value)" class="form-control form-control-sm" name="timeframe">
+              <option id="{{timeframes[timeframe.id].id}}" value="{{timeframes[timeframe.id].timeframe}}" selected="{{timeframes[timeframe.id].selected}}" *ngFor="let timeframe of timeframes">{{timeframes[timeframe.id].label}}</option>
+            </select>
+          </div>  
+        </div> -->
+
+    
+        <canvas  
+          baseChart
+          [chartType]="'bar'"
+          [datasets]="chartData"
+          [options]="chartOptions"
+          [legend]="chartLegend"
+          [labels]="chartLabels">
+        </canvas>
+    
+      </div>
     </div>
-</div>
-
-
-<!-- <div class="header container">
-    <div class="nav-bar">
-        <div class="brand">
-            <a href="#home">
-                <h1><span>WEL</span>COME</h1>
-            </a>
-        </div>
-    </div>
-</div> -->
+    
+    
+  </section>
+<!-- </body> - -->
