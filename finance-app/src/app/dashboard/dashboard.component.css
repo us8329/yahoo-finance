@@ -13,6 +13,8 @@ margin: 0;
     height: 80px;
     /* justify-content: center; */
 }
+
+
 .heading{
     color: whitesmoke;
     padding-left: 100px;
@@ -40,20 +42,18 @@ a{
     align-items: center;
     justify-content: center;
 }
-
-img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
 p{
+
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-top: 5px;
     line-height: 2.5rem;
     font-weight: 300;
     letter-spacing: .05rem;
+    padding-right: 10px;
+}
+p:hover{
+    color: grey;
 }
 
 .section-title{
@@ -88,7 +88,7 @@ canvas{
 
     /* width:1000px !important; */
     height:800px !important;
-  
+    background-color:white;
   }
 
 .cta:hover {
@@ -239,7 +239,7 @@ canvas{
     transition-property: top, bottom;
 }
 
-#header .hamburger .bar::after {
+/* #header .hamburger .bar::after {
     top: 8px;
 }
 
@@ -253,4 +253,4 @@ canvas{
 
 #header .hamburger.active .bar::after {
     top: 0;
-}
+} */
