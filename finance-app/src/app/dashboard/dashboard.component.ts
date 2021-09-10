@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit {
   onChange(event: any){
     console.log(event);
   }
-  onTimeChange(timeframe: number){
+  onTimeChange(timeframe: any){
     console.log(timeframe);
   }
 

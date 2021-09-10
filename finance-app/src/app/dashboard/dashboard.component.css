@@ -5,15 +5,27 @@ margin: 0;
     box-sizing: border-box;
 }
 .body{
-    background-image: url('/assets/images/stock.jpg');
-    border-radius: 10px;
+    /* background-image: url('/assets/images/stock.jpg');
+    background-repeat: no-repeat;
+    background-position : center ; */
+    background: url('/assets/images/stock.jpg') no-repeat center center fixed; 
+    /* -webkit-background-size: cover; */
+    /* -moz-background-size: cover; */
+    /* -o-background-size: cover; */
+    background-size: cover;
 }
 .navbar{
     background-color: whitesmoke;
     height: 80px;
     /* justify-content: center; */
 }
-
+.label{
+    padding-right: 10px;
+}
+.label:hover{
+    color:rgb(107, 107, 107);
+    border-width: 2px;
+}
 
 .heading{
     color: whitesmoke;
@@ -84,11 +96,16 @@ p:hover{
     transition-property: background-color, color;
 }
 
+.card-body{
+    background-color: rgb(236, 236, 236);
+}
 canvas{
-
-    /* width:1000px !important; */
+    color: white;
+    width:1000px !important;
     height:800px !important;
-    background-color:white;
+    /* background-color:rgb(116, 116, 116); */
+    /* background-color: rgb(87, 87, 87); */
+
   }
 
 .cta:hover {

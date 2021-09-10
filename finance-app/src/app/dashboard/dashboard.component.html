@@ -3,7 +3,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+</svg>
 <body>
 <nav class="navbar fixed-top navbar-light bg-light" position='fixed' style="margin-bottom: 10px">
   <div class="brand">
@@ -13,7 +15,9 @@
   </div>
   <div class="label">
     <label (click)="toSearch()">
-      <p>search</p>
+      <!-- <p>search</p> -->
+      <mat-icon aria-hidden="false" aria-label="Example home icon">search</mat-icon>
+
     </label>
   </div>
 </nav>
@@ -48,7 +52,6 @@
 </body>
 
 <!-- <body>  -->
-  <body class="body">
   <section id="searchStock">
     <div class='card'>
       <div class="card-body"><br />
@@ -61,15 +64,13 @@
 
     
         <div class="form-group row" id="timeframe">
+          <div class="col-sm-6">
           <label class="col-sm-6 col-form-label" for="timeframe">Timeframe:</label>
-          </div>
-
-          <!-- <div class="col-sm-6">
-            <select (change)="onTimeChange($event.target.value)" class="form-control form-control-sm" name="timeframe">
+            <select (change)="onTimeChange($event)" class="form-control form-control-sm" name="timeframe">
               <option id="{{timeframes[timeframe.id].id}}" value="{{timeframes[timeframe.id].timeframe}}" selected="{{timeframes[timeframe.id].selected}}" *ngFor="let timeframe of timeframes">{{timeframes[timeframe.id].label}}</option>
             </select>
           </div>  
-        </div> -->
+        </div>
 
     
         <canvas  
@@ -86,4 +87,3 @@
     
     
   </section>
-</body> 

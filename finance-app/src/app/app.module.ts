@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ChartsModule } from 'ng2-charts';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
+    BrowserAnimationsModule,
+    MatIconModule
 
   ],
   providers: [],
