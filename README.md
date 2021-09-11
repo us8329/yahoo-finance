@@ -1,1 +1,1 @@
-# yahoo-finance
+Yahoo-Finance is a web app which displays the graph of the stock entered by the user , using Alpha Vantage Stock Api https://www.alphavantage.co/documentation/ . Helps User to clearly see the stock chart over a period of time .
